@@ -1,12 +1,3 @@
-AuthUserFile /virtual/laradock420/.htpasswd
-AuthGroupFile /dev/null
-AuthName MembersOnly
-AuthType Basic
-
-<Limit GET POST>
-require valid-user
-</Limit>
-
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
